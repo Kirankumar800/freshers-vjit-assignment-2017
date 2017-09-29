@@ -1,0 +1,14 @@
+Solution:
+1.At first you need to enter the restaurant details such as no of tables in the restaurant and their capacity
+2.When you enter the customer this is handled by a Customer class 
+3.At first when customer enters he is allotted with a the table with specific ID
+4.Then Customer class calls Menu class to display the menu in three sections wit their prices
+5.Customer is served water by the bell boys to the customers
+6.Managers come to take the initial orders from the customers
+7.Each order which is taken by the customer is stored in a file
+8.After each order placed the customer can place order again
+9.Order is taken by the executive chef and orders line cook’s to prepare the food
+10.Line cooks prepare the food and supplied by servers to respected tables
+11.After last order bill is generated and given to the customer
+12.Customer is asked to write a feedback or any comments
+13.After customers leaving the table it is cleaned by the bell boys and restore to initial
