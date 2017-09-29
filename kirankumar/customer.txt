@@ -1,0 +1,105 @@
+import java.util.Scanner;
+
+public class Customer {
+	
+	void allotTable(int n)
+	{
+		if(n > 2)
+		{
+			if(n>4)
+			{
+
+				
+				Manager.t8--;
+				if(Manager.t8>0)
+				{
+					System.out.println("table with capacity 8 is allotted");
+				Menu m = new Menu();
+				m.showMenu();
+				System.out.println("Bell boys serve water");
+				Scanner s = new Scanner(System.in);
+				for( ; ;)
+				{
+				    System.out.println("enter the choice of your dish");
+				    int ch = s.nextInt();
+				    Billing.bill(ch);
+				    System.out.println("do you Wish to order any thing if yes press 1");
+				    int choice = s.nextInt();
+				    if(choice != 1)
+				    {
+				    	
+				    	System.out.println("thank you for visiting");
+				    	System.out.println("Table is cleaned");
+				    	break;
+				    } 
+				 }
+			}
+				else
+				{
+					System.out.println("cannot accomodate customers please move on");
+				}
+			}
+			else
+			{
+
+				
+				Manager.t4--;
+				if(Manager.t4>0)
+				{
+					
+					System.out.println("table with capacity 4 is allotted");
+				Menu m = new Menu();
+				m.showMenu();
+				Scanner s = new Scanner(System.in);
+				for( ; ;)
+				{
+				    System.out.println("enter the choice of your dish");
+				    int ch = s.nextInt();
+				    Billing.bill(ch);
+				    System.out.println("do you Wish to order any thing if yes press 1");
+				    int choice = s.nextInt();
+				    if(choice != 1)
+				    {
+				    	System.out.println("thank you for visiting");
+				    	System.out.println("Table is cleaned");
+				    	break;
+				    } 
+				 }
+			}
+				else
+				{
+					System.out.println("Table with capacity 2 is not free So sorry please move on");
+				}
+		}
+		}
+		else
+		{
+			
+			Manager.t2--;
+			if(Manager.t2>0)
+			{
+				System.out.println("table with capacity 2 is allotted");
+			Menu m = new Menu();
+			m.showMenu();
+			Scanner s = new Scanner(System.in);
+			for( ; ;)
+			{
+			    System.out.println("enter the choice of your dish");
+			    int ch = s.nextInt();
+			    Billing.bill(ch);
+			    System.out.println("do you Wish to order any thing if yes press 1");
+			    int choice = s.nextInt();
+			    if(choice != 1)
+			    {
+			    	System.out.println("thank you for visiting");
+			    	System.out.println("Table is cleaned");
+			    	break;
+			    } 
+			 }
+		}
+			else{
+				System.out.println("Table with capacity 2 is not free So sorry please move on");
+			}
+	}
+	}
+}
