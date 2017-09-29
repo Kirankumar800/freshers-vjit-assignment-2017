@@ -1,0 +1,27 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.Formatter;
+
+public class Cashmemo {
+	
+	void generate(int n)
+	{
+		final Formatter file;
+		try
+		{
+			file = new Formatter("cashmemo.txt");
+			BufferedWriter writer = new BufferedWriter(new FileWriter("cashmemo.txt"));
+			writer.write(n);
+		}
+		catch(Exception e)
+		{
+			
+		}
+	}
+	
+	void summary()
+	{
+		
+	}
+
+}
