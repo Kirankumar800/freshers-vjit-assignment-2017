@@ -1,0 +1,17 @@
+
+public class Billing {
+	
+	 static int billAmount;
+	
+	static void bill( int n)
+	{
+		switch(n)
+		{
+		case 11:
+				 billAmount = billAmount + n;
+				 Cashmemo c = new Cashmemo();
+				 c.generate(n);
+				 break;
+		}
+	}
+}
